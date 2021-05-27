@@ -65,11 +65,11 @@ footer {
 }
 
 .giftcard-header__logo {
-  font-family: {{ settings.logo__font.family }}, {{ settings.logo__font.fallback_families }};
-  font-weight: {{ settings.logo__font.weight }};
-  font-style: {{ settings.logo__font.style }};
-  font-size: {{ settings.logo_font_size | append: 'px' }};
-  text-transform: {{ settings.logo_font_style }};
+  font-family: {{ .logo__font.family }}, {{ .logo__font.fallback_families }};
+  font-weight: {{ .logo__font.weight }};
+  font-style: {{ .logo__font.style }};
+  font-size: {{ .logo_font_size | append: 'px' }};
+  text-transform: {{ .logo_font_style }};
   line-height: 1.2;
 }
 
@@ -420,11 +420,7 @@ h2,
 h3 {
     orphans: 3;
     widows: 3;
-  }
-
-  h2,
-h3 {
-    page-break-after: avoid;
+	page-break-after: avoid;
   }
 
   html,
@@ -515,6 +511,6 @@ body {
     opacity: 0;
   }
   100% {
-    opacity: 100;
+    opacity: 1;
   }
 }
