@@ -1,18 +1,18 @@
 .price, .current_price, .modal_price {
-display: none !important;
+display: none;
 }
 
-#add-to-cart, .add_to_cart {
-display: none !important;
+#add-to-cart , .add_to_cart {
+display: none;
 }
 .purchase-details__quantity, .product-quantity-box, .purchase-details{
-  display: none !important;
+  display: none;
 }
 
 .js-recently-viewed,.recently-viewed__section, .search-input-bar, .search-bar-btn{
-    display: none !important;
+    display: none;
 
 }
 .disclosure__toggle, .disclosure__toggle--currency, .product-charity-upsell {
-display: none !important
+display: none
 }
